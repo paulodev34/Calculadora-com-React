@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 const App = () => {
-  const [resultado, setResultado] = useState("");
+  const [resultado] = useState("");
   return (
     <>
       <div className="container">
