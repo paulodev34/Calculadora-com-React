@@ -21,17 +21,47 @@ body {
   text-align: center;
   background: black;
   border: 0.8rem solid black;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
 }
 
 .teclado {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(3.5rem, auto);
+  font-weight: 100px;
 }
+
 input[type="text"] {
   height: 4rem;
   width: 13.5rem;
   background: black;
   border: 0;
+  color: white;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#zero {
+  grid-column: 1/3;
+  grid-row-end: 6;
+  text-indent: -3.3rem;
+}
+
+button {
+  margin: 0.2rem;
+  border: none;
+  border-radius: 2rem 2rem;
+  cursor: pointer;
+  background-color: #262834;
+  color: white;
+}
+
+.botao-cinza {
+  background-color: rgb(204, 204, 204);
+  color: black;
+}
+
+.botao-laranja {
+  background-color: rgb(255, 166, 0);
 }
