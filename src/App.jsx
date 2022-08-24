@@ -11,6 +11,14 @@ const App = () => {
   const AC = () => {
     setResultado("");
   };
+
+  const calcule = () => {
+    try {
+      setResultado(eval(resultado).toString());
+    } catch (err) {
+      setResultado("error");
+    }
+  };
   return (
     <>
       <div className="container">
@@ -39,7 +47,7 @@ const App = () => {
           <button name="9" onClick={handleClick}>
             9
           </button>
-          <button className="botao-laranja" name="X" onClick={handleClick}>
+          <button className="botao-laranja" name="*" onClick={handleClick}>
             X
           </button>
           <button name="4" onClick={handleClick}>
@@ -72,7 +80,7 @@ const App = () => {
           <button name="," onClick={handleClick}>
             ,
           </button>
-          <button className="botao-laranja" onClick={handleClick}>
+          <button className="botao-laranja" onClick={calcule}>
             =
           </button>
         </div>
