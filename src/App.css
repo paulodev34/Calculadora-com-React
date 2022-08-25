@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 14rem;
+  width: 18rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,7 +28,7 @@ body {
 .teclado {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(3.5rem, auto);
+  grid-auto-rows: minmax(4.3rem, auto);
 }
 
 input[type="text"] {
@@ -45,16 +45,17 @@ input[type="text"] {
 #zero {
   grid-column: 1/3;
   grid-row-end: 6;
-  text-indent: -3.3rem;
+  text-indent: -4.3rem;
 }
 
 button {
   margin: 0.2rem;
   border: none;
-  border-radius: 2rem 2rem;
+  border-radius: 2rem 2rem 2rem 2rem;
   cursor: pointer;
   background-color: #262834;
   color: white;
+  font-weight: 700;
 }
 
 .botao-cinza {

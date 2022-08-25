@@ -11,6 +11,9 @@ const App = () => {
   const AC = () => {
     setResultado("");
   };
+  const space = () => {
+    setResultado(resultado.slice(0, -1));
+  };
 
   const calcule = () => {
     try {
@@ -27,10 +30,10 @@ const App = () => {
         </form>
         <div className="teclado">
           <button className="botao-cinza" onClick={AC} id="AC">
-            C
+            AC
           </button>
-          <button className="botao-cinza" name="+/-" onClick={handleClick}>
-            +/-
+          <button className="botao-cinza" name="C" onClick={space}>
+            C
           </button>
           <button className="botao-cinza" name="%" onClick={handleClick}>
             %
