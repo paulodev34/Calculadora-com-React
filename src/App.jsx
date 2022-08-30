@@ -39,7 +39,7 @@ const App = () => {
             %
           </button>
           <button className="botao-laranja" name="/" onClick={handleClick}>
-            /
+            ÷
           </button>
           <button name="7" onClick={handleClick}>
             7
